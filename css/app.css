@@ -12223,9 +12223,21 @@ textarea.form-control-lg {
 }
 
 .subtitle {
-  font-size: larger;
+  font-size: 2rem;
   font-family: "Dancing Script", cursive;
   color: hsl(19deg, 64%, 54%);
+}
+
+.dish-card {
+  background-color: hsl(19deg, 100%, 97%);
+}
+.dish-card img {
+  transform: translateY(-50px);
+  transition: 0.5s;
+}
+
+.dish-card:hover img {
+  transform: translateY(-70px);
 }
 
 /*# sourceMappingURL=app.css.map */

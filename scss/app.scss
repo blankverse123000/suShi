@@ -10,6 +10,7 @@ $btn-padding-y: 0.7rem;
 $navbar-nav-link-padding-x: 1.5rem;
 $font-family-base: "Poppins", sans-serif;
 $headings-font-family: "Lora", serif;
+$color: hsl(19, 16%, 35%);
 $light: hsl(19, 8%, 55%);
 $spacer: 1rem;
 $spacers: (
@@ -42,7 +43,17 @@ $spacers: (
   // vertical-align: middle;
 }
 .subtitle {
-  font-size: larger;
+  font-size: 2rem;
   font-family: "Dancing Script", cursive;
   color: $primary;
+}
+.dish-card {
+  background-color: hsl(19, 100%, 97%);
+  img {
+    transform: translateY(-50px);
+    transition: 0.5s;
+  }
+}
+.dish-card:hover img {
+  transform: translateY(-70px);
 }

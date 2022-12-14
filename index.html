@@ -10,7 +10,7 @@
   </head>
   <body class="">
     <header class="container mb-4">
-      <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./img/logo.png" class="nav-brand-icon" alt="" />
@@ -30,13 +30,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" class="fs-2">About Us</a>
+                <a class="nav-link" href="#about" class="fs-2">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Popular</a>
+                <a class="nav-link" href="#popular">Popular</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Recently</a>
@@ -52,68 +54,126 @@
         </div>
       </nav>
     </header>
-    <!-- Home Section  -->
-    <section class="my-7">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-5 animate__animated animate__bounceInDown">
-            <h2 class="">
-              <div class="display-3">Enjoy Delicious</div>
-              <div class="d-flex display-3 align-items-center">
+    <main>
+      <!-- Home Section  -->
+      <section class="py-9" id="home">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-5 animate__animated animate__bounceInDown">
+              <h2 class="">
+                <div class="display-3">Enjoy Delicious</div>
+                <div class="d-flex display-3 align-items-center">
+                  <img
+                    src="./img/home-sushi-title.png"
+                    class="img-icon"
+                    alt="home-sushi-title.png"
+                  />
+                  Sushi Food
+                </div>
+              </h2>
+
+              <p class="mb-5">
+                Enjoy a good dinner with the best <br />
+                dishes in the restaurant and improve <br />
+                your day.
+              </p>
+
+              <a href="#" class="btn btn-primary"
+                >Order Now <i class="ri-arrow-right-line align-middle p-2"></i
+              ></a>
+            </div>
+
+            <div class="col-7 animate__animated animate__bounceInUp">
+              <img src="./img/home-sushi-rolls.png" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section  -->
+      <section class="py-9" id="about">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./img/about-sushi.png" class="w-100" alt="" />
+            </div>
+            <div class="col-4 offset-1">
+              <div class="subtitle">About Us</div>
+              <h2 class="display-6">
+                We Provide
                 <img
-                  src="./img/home-sushi-title.png"
+                  src="./img/about-sushi-title.png"
                   class="img-icon"
-                  alt="home-sushi-title.png"
+                  alt="about-sushi-title.png"
                 />
-                Sushi Food
+                <div class="">Healthy Food</div>
+              </h2>
+              <p>
+                Food comes to us from our relatives, whether <br />
+                they have wings or roots. This is how we <br />
+                consider food, it also has a culture. It has a <br />
+                history that passes from generation to <br />
+                generation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular section  -->
+      <section id="popular" class="py-9">
+        <div class="container">
+          <div class="row text-center mb-9">
+            <div class="col-12 subtitle">The Best Food</div>
+            <div class="col-12 h1">Popular Dishes</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3">
+              <div class="dish-card p-4 shadow rounded-4">
+                <img
+                  src="./img/popular-onigiri.png"
+                  class="w-100 d-block"
+                  alt=""
+                />
+                <div class="text-center">
+                  <p class="h2">Onigiri</p>
+                  <p>Japanese Dish</p>
+                  <p class="h4 text-primary">$10.99</p>
+                </div>
               </div>
-            </h2>
-
-            <p class="mb-5">
-              Enjoy a good dinner with the best <br />
-              dishes in the restaurant and improve <br />
-              your day.
-            </p>
-
-            <a href="#" class="btn btn-primary"
-              >Order Now <i class="ri-arrow-right-line align-middle p-2"></i
-            ></a>
-          </div>
-
-          <div class="col-7 animate__animated animate__bounceInUp">
-            <img src="./img/home-sushi-rolls.png" alt="" class="w-100" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section  -->
-    <section class="my-7">
-      <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-7">
-            <img src="./img/about-sushi.png" class="w-100" alt="" />
-          </div>
-          <div class="col-5">
-            <div class="subtitle">About Us</div>
-            <h2 class="display-3">
-              <div class="">We Provide</div>
-              <img
-                src="./img/about-sushi-title.png"
-                class="img-icon"
-                alt="about-sushi-title.png"
-              />
-              Healthy Food
-            </h2>
-            <p>
-              Food comes to us from our relatives, whether they have wings or
-              roots. This is how we consider food, it also has a culture. It has
-              a history that passes from generation to generation.
-            </p>
+            </div>
+            <div class="col-3">
+              <div class="dish-card p-4 shadow rounded-4">
+                <img
+                  src="./img/popular-spring-rols.png"
+                  class="w-100 d-block"
+                  alt=""
+                />
+                <div class="text-center">
+                  <p class="h2">Spring Rolls</p>
+                  <p>Japanese Dish</p>
+                  <p class="h4 text-primary">$15.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="dish-card p-4 shadow rounded-4">
+                <img
+                  src="./img/popular-sushi-rolls.png"
+                  class="w-100 d-block"
+                  alt=""
+                />
+                <div class="text-center">
+                  <p class="h2">Sushi Rolls</p>
+                  <p>Japanese Dish</p>
+                  <p class="h4 text-primary">$19.99</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../sushi__1/assets/js/main.js"></script>
   </body>
