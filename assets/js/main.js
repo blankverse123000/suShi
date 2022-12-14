@@ -1,19 +1,13 @@
 /*=============== SHOW MENU ===============*/
 
-
 /*=============== REMOVE MENU MOBILE ===============*/
-
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
+/*=============== SHOW SCROLL UP ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
-
-/*=============== DARK LIGHT THEME ===============*/ 
-
+/*=============== DARK LIGHT THEME ===============*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
