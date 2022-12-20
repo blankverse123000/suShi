@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sushi</title>
+    <link rel="icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
   </head>
   <body class="">
     <header class="container mb-4">
-      <nav class="navbar navbar-expand-lg bg-body fixed-top">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container fixed-top bg-body navChange">
           <a class="navbar-brand" href="#">
             <img src="./img/logo.png" class="nav-brand-icon" alt="" />
             Sushi</a
@@ -41,13 +42,13 @@
                 <a class="nav-link" href="#popular">Popular</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Recently</a>
+                <a class="nav-link" href="#recent">Recently</a>
               </li>
             </ul>
 
             <div class="">
-              <a href="#" class="btn">
-                <i class="ri-moon-line"></i>
+              <a class="btn themeBtn">
+                <i class="ri-moon-line theme_icon"></i>
               </a>
             </div>
           </div>
@@ -59,7 +60,9 @@
       <section class="py-9" id="home">
         <div class="container">
           <div class="row justify-content-center align-items-center">
-            <div class="col-5 animate__animated animate__bounceInDown">
+            <div
+              class="col-12 col-md-5 animate__animated animate__bounceInDown"
+            >
               <h2 class="">
                 <div class="display-3">Enjoy Delicious</div>
                 <div class="d-flex display-3 align-items-center">
@@ -83,7 +86,7 @@
               ></a>
             </div>
 
-            <div class="col-7 animate__animated animate__bounceInUp">
+            <div class="col-12 col-md-7 animate__animated animate__bounceInUp">
               <img src="./img/home-sushi-rolls.png" alt="" class="w-100" />
             </div>
           </div>
@@ -91,13 +94,13 @@
       </section>
 
       <!-- About Section  -->
-      <section class="py-9" id="about">
+      <section class="pt-5 py-lg-9" id="about">
         <div class="container">
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <img src="./img/about-sushi.png" class="w-100" alt="" />
             </div>
-            <div class="col-4 offset-1">
+            <div class="col-12 col-md-4 offset-md-1">
               <div class="subtitle">About Us</div>
               <h2 class="display-6">
                 We Provide
@@ -124,11 +127,11 @@
       <section id="popular" class="py-9">
         <div class="container">
           <div class="row text-center mb-9">
-            <div class="col-12 subtitle">The Best Food</div>
-            <div class="col-12 h1">Popular Dishes</div>
+            <div class="col-md-12 subtitle">The Best Food</div>
+            <div class="col-md-12 h1">Popular Dishes</div>
           </div>
           <div class="row justify-content-center">
-            <div class="col-3">
+            <div class="col-12 mb-4 col-md-3">
               <div class="dish-card p-4 shadow rounded-4">
                 <img
                   src="./img/popular-onigiri.png"
@@ -142,7 +145,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 mb-4 col-md-3">
               <div class="dish-card p-4 shadow rounded-4">
                 <img
                   src="./img/popular-spring-rols.png"
@@ -156,7 +159,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 mb-4 col-md-3">
               <div class="dish-card p-4 shadow rounded-4">
                 <img
                   src="./img/popular-sushi-rolls.png"
@@ -173,8 +176,149 @@
           </div>
         </div>
       </section>
+      <!-- Recently section  -->
+      <section class="py-9" id="recent">
+        <div class="container">
+          <div
+            class="row d-flex justify-content-center align-items-center mb-9"
+          >
+            <div class="col-12 col-md-4">
+              <div class="subtitle">Recently Added</div>
+              <h2 class="display-6">
+                Sushi Samurai <br />
+                Salmón Cheese
+                <img
+                  src="./img/spinach-leaf.png"
+                  class="img-icon"
+                  alt="about-sushi-title.png"
+                  style="transform: translateX(10px) rotate(45deg)"
+                />
+              </h2>
+              <p>
+                Take a look at what's new. And do not <br />
+                deprive yourself of a good meal, enjoy and <br />
+                be happy. generation.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Order Now <i class="ri-arrow-right-line align-middle p-2"></i
+              ></a>
+            </div>
+            <div class="col-12 col-md-5 offset-md-1">
+              <img src="./img/recently-salmon-sushi.png" class="w-100" alt="" />
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-center align-items-center bg-dark rounded-4"
+          >
+            <div class="col-12 mb-5 col-md-4">
+              <img src="./img/newsletter-sushi.png" class="w-100" alt="" />
+            </div>
+            <div class="col-12 mb-5 col-md-4">
+              <div class="subtitle">Newsletter</div>
+              <h2 class="text-white">
+                Subscribe For <br />
+                Offer Updates
+              </h2>
+              <div
+                class="p-2 ps-4 d-flex align-items-center justify-content-center rounded-pill bg-white position-relative gap-0"
+              >
+                <input
+                  type="text"
+                  class="border-0 bg-transparent w-100"
+                  placeholder="Enter email"
+                />
+                <button class="btn btn-primary text-nowrap">
+                  Subscribe <i class="ri-send-plane-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container py-9 overflow-hidden">
+        <div class="row">
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <h5>
+              <img src="./img/logo.png" class="nav-brand-icon" alt="" />Sushi
+            </h5>
+            <p class="pb-5">
+              Food for the body is not <br />
+              enough. There must be food <br />
+              for the soul.
+            </p>
+            <img
+              src="./img/spinach-leaf.png"
+              class="img-icon d-none d-md-block"
+              style="transform: translateX(150px) rotate(40deg)"
+              alt=" spinach-leaf"
+            />
+          </div>
+          <div class="col-12 col-md-2 offset-md-1 text-center text-md-start">
+            <h5>Main Menu</h5>
+            <p>About</p>
+            <p>Menus</p>
+            <p>Offer</p>
+            <p>Events</p>
+          </div>
+          <div class="col-12 col-md-2 text-center text-md-start">
+            <h5>Information</h5>
+            <p>Contact</p>
+            <p>Order & Returns</p>
+            <p>Videos</p>
+            <p>Reservation</p>
+          </div>
+          <div class="col-12 col-md-2 text-center text-md-start">
+            <h5>Address</h5>
+            <p>
+              Av. Hacienda 1234 <br />
+              Lima 4321, Perú
+            </p>
+            <p>9AM - 11PM</p>
+          </div>
+          <div class="col-12 col-md-2 text-center text-md-start">
+            <h5>Social Media</h5>
+            <a href="#" class="text-decoration-none"
+              ><i class="ri-facebook-circle-fill fs-3 me-3"></i
+            ></a>
+            <a href="#" class="text-decoration-none"
+              ><i class="ri-instagram-fill fs-3 me-3"></i
+            ></a>
+            <a href="#" class="text-decoration-none"
+              ><i class="ri-twitter-fill fs-3 me-3"></i
+            ></a>
+
+            <div
+              class=""
+              style="transform: translate(60px, 0px) rotate(316deg)"
+            >
+              <img
+                src="./img/spring-onion.png"
+                class="w-25 d-none d-md-block"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div
+          class="row flex-column-reverse flex-lg-row justify-content-between align-items-center"
+        >
+          <div class="col-12 col-md-6">
+            &#169; Copyright Bedimcode. All rights reserved
+          </div>
+          <div class="col-12 col-md-6 text-end g-2 text-center text-md-end">
+            <img src="./img/footer-card-1.png" alt="" />
+            <img src="./img/footer-card-2.png" alt="" />
+            <img src="./img/footer-card-3.png" alt="" />
+            <img src="./img/footer-card-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../sushi__1/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
